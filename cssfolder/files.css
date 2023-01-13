@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:800px) {
+    .wrapper{
+        flex-direction: column-reverse;
+    }
+}
+.c {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 10px;
+}
+@media (max-width:800px) {
+    .c{
+        width:100%
+    }
+}
+.c .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.c .box .icon {
+    position: absolute;
+    top: 4px;
+    left: 19px;
+}
+.c .box .icon i {
+    color: var(--color);
+}
+.box .image {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding-top: 42px;
+}
+.box img {
+    width: 60px;
+}
+.image p {
+    margin: 22px 0px 10px;
+    font-size: 14px;
+}
+.box .name {
+    width: 90%;
+    color: #777;
+    font-size: 12px;
+    border-bottom: 1px solid var(--color);
+    padding: 7px 0px;
+}
+.info{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 7px 0px;
+    align-items: center;
+}
+.info p {
+    color: #777;
+    font-size: 11px;
+}
+.summary{
+    min-width: 240px;
+    max-width: 100%;
+    padding:15px 10px;
+    height: 359px;
+}
+.summary h3 {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+@media (max-width:767px) {
+    .summary h3 {
+        text-align: center;
+    }
+    .summary{
+        flex:1;
+    }
+}
+.summary  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.summary > div .info {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.summary .info i{
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+}
+.summary > div:nth-child(2) i {
+    color:dodgerblue;
+    background: #1e90ff47;
+}
+.summary > div:nth-child(3) i {
+    color: #22c55e;
+    background: #22c55e4d
+}
+.summary > div:nth-child(4) i {
+    color:#f44336;
+    background: #f4433645;
+}
+.summary > div:last-of-type i {
+    color: #f59e0b;
+    background: #f59e0b66
+}
+.summary .text {
+    margin-left: 10px;
+}
+.summary .info p:first-of-type{
+    color: #000;
+}
+.summary span {
+    font-size: 12px;
+    color: #777;
+}
+.summary button {
+    border: 0;
+    background: dodgerblue;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+    margin: 14px auto 1px;
+    display: block;
+    cursor: pointer;
+}
+.summary button i {
+    margin-right: 6px;
+}

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* start styling */
+.box {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   padding-bottom: 30px;
+}
+.box .text{
+    width: 246px;
+    height: 246px;
+    background: dodgerblue;
+    border-radius: 0px 50% 50%;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    box-shadow: inset 2px 1px 48px rgb(0 0 0 / 30%);
+    position: relative;
+}
+.box h3 {
+    color: #fff;
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+.box .text p {
+    font-size: 13px;
+    color: #eee;
+    line-height: 2;
+}
+.box .time {
+    width: 70px;
+    height: 70px;
+    background: dodgerblue;
+    border-radius: 0px 50% 50%;
+    box-shadow: inset 2px 1px 10px rgb(0 0 0 / 30%);
+    display: grid;
+    place-content: center;
+    position: absolute;
+}
+.box .time p {
+    color: #fff;
+    font-size: 11px;
+}
+.box .people {
+    display: flex;
+    width: calc(100% - 276px);
+    justify-content: end;
+    padding: 30px;
+    flex-direction: column;
+}
+@media (max-width:805px) {
+    .box .people{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+    }
+}
+.people .images {
+    margin: 0px 0px 0px auto;
+    margin-bottom: 14px;
+}
+@media (max-width:805px) {
+    .people .images{
+        margin: 20px auto;
+    }
+}
+.box .people img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: -7px;
+}
+@media (min-width:1200px) and (max-width:1300px) {
+    .box img {
+        width:29px;
+    }
+}
+.box .requirements{
+    display: flex;
+    margin: 0px 0px 0px auto;
+    flex-wrap: wrap;
+}
+@media (max-width:805px) {
+    .box .requirements{
+        margin: 10px auto -9px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.box .requirements p {
+    width: fit-content;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 11px;
+    margin-left:10px;
+    margin-bottom: 5px;
+}
+.box span {
+    width: 202px;
+    height: 5px;
+    border-radius: 13px;
+    background:linear-gradient(to right , var(--color) 70%, #eee 70%);
+    display: block;
+    margin: 36px auto;
+    max-width: 100%;
+}
+.second span{
+    background:linear-gradient(to right , var(--color) 40%, #eee 40%); 
+}
+.third span {
+    background:linear-gradient(to right , var(--color) 90%, #eee 90%); 
+}
+.box .price p {
+    margin: 0px 10px 0px auto;
+    width: fit-content;
+    font-size: 20px;
+    font-family: cursive;
+    position: relative;
+}
+.box .price p::before{
+    content: "\24";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    left: -14px;
+    font-size: 23px;
+}
+.first p::before{
+    color: dodgerblue;
+}
+.second p::before{
+    color: #f59e0b;
+}
+.third p::before{
+    color:#22c55e;
+}
+.four p::before{
+    color:#f44336;
+}

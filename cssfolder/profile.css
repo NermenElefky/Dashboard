@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text{
+    padding:10px 15px;
+}
+@media (min-width:1200px) {
+    .wrapper{
+        grid-template-columns: 33% 64%;
+    }
+}
+@media (max-width:767px) {
+    .container .content {
+        padding: 10px;
+    }
+}
+.profile-head{
+    font-size: 18px;
+}
+.profile-p{
+    color: #777;
+    font-size: 14px;
+    letter-spacing: .8px;
+}
+.profile-sub-p{
+    font-size: 12px;
+    color: #777;
+}
+/* start info */
+.info {
+    display: flex;
+}
+@media (min-width:1200px) {
+    .info{
+        grid-column: 1/3;
+    }
+}
+@media (max-width:767px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.info .me {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+}
+@media (max-width:767px) {
+    .info .me {
+        padding: 32px 0px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+}
+.info .me img {
+    width: 110px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.info .me h2 {
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.info .me p:first-of-type{
+    margin-bottom: 11px;
+}
+.info .me span{
+    position:relative;
+    display: block;
+    margin-bottom: 9px;
+} 
+.info .me span::before{
+    content: "";
+    width: 130px;
+    height: 3px;
+    background: linear-gradient(to right , dodgerblue 70% , #eee 70%);
+    position: absolute;
+    border-radius: 7px;
+    left: -65px; /*half of width*/
+}
+.info .me span::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: dodgerblue;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -4px;
+    left: 20px;
+}
+.info .me .rate {
+    margin-bottom: 3px;
+}
+.info .me i {
+    font-size: 14px;
+    color:#f59e0b;
+}
+/* strat more-info */
+.more-info{
+    flex: 1;
+    padding: 10px 15px;
+}
+@media (max-width:767px) {
+    .more-info{
+        padding: 10px 26px;
+        width: 100%;
+    }
+}
+.more-info >div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    align-items: end;
+    padding: 20px 0px;
+}
+.more-info >div:not(:last-of-type){
+    border-bottom: 1px solid #ccc;
+}
+.more-info p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+.more-info h3 span:first-of-type{
+    font-size: 14px;
+    color: #777;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-right: 5px;
+    font-weight: 300;
+}
+.more-info h3 span:last-of-type{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.more-info button{
+    width: 98px;
+    height: 37px;
+    background: #fff;
+    border: 3px solid #fff;
+    box-shadow: inset 10px 10px 15px -10px rgb(195 195 195 / 70%),
+     inset -10px -10px 15px -10px #fff,
+      3px 3px 7px #c3c3c3,
+       -2px -5px 8px #fff;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 10px;
+}
+.more-info button::after{
+    content: "Off";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: .5s;
+    margin-top: 2px;
+}
+.more-info button::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);
+    transition: .5s;
+}
+.more-info button input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 4;
+    opacity: 0;
+    cursor: pointer;
+}
+.more-info button:has(input:checked)::after{
+    right:55px;
+    content: "On";
+    color: #fff;
+}
+.more-info button:has(input:checked)::before{
+    left:55px;
+}
+.more-info button:has(input:checked){
+    background-color: dodgerblue;
+    box-shadow:  3px 3px 7px #c3c3c3,
+    -2px -5px 8px #fff;
+}
+/* start skills */
+.skills .text{
+    padding: 10px 15px;
+}
+.skills h2 {
+    font-size:19px;
+    margin-bottom: 7px;
+}
+.skills p {
+
+}
+.boxs-container{
+    padding: 10px 15px;
+}
+.boxs-container div{
+    display: flex;
+    padding: 10px 0px;
+}
+.boxs-container div:not(:last-of-type){
+    border-bottom: 1px solid #ccc;
+}
+.boxs-container p{
+    background: #eee;
+    border-radius: 7px;
+    margin-right: 11px;
+    padding: 4px 6px;
+}
+/* start activity */
+.activity {
+
+}
+.activity .text h2 {
+    font-size: 22px;
+}
+.activity .text p {
+    margin-top: 7px;
+}
+.activity-box-container{
+    padding: 10px 15px;
+}
+.activity-box-container .ac{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:767px) {
+    .activity-box-container .ac {
+        flex-direction: column;
+    }
+}
+.activity-box-container .ac:not(:last-of-type){
+    border-bottom: 1px solid #ccc;
+}
+.ac .info {
+        display: flex;
+        align-items: center;
+}
+@media (max-width:767px){
+    .ac .info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.activity-box-container .image{
+    margin-right: 15px;
+}
+@media (max-width:767px){
+    .activity-box-container .image {
+        margin-right: 0px;
+        margin-bottom: 4px;
+    }
+}
+.activity-box-container i{
+    color: white;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 10px -1px;
+}
+.activity-box-container h3{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.activity-box-container .time {
+    text-align: center;
+}
+@media (max-width:767px){
+    .activity-box-container .time {
+        margin-bottom: 4px;
+    }
+}
+.activity-box-container .time p:first-of-type {
+    color:#777;
+}
+@media (max-width:767px) {
+    .activity-box-container .t {
+        margin: 6px 0px;
+    }
+}

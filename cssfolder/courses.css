@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    grid-template-columns: repeat(auto-fill,minmax(250px,320px));
+    grid-gap:30px;
+    place-content: center;
+}
+/* start coding */
+.c {
+    background: #fff;
+    position: relative;
+    margin-top: 40px;
+}
+.c .icon {
+    min-height: 100px;
+    background: linear-gradient(to bottom , #9c27b0 , rgba(30, 143, 255, 0.513));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    position: relative;
+}
+.c .icon::after{
+    position: absolute;
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgba(30, 143, 255, 0.513) transparent transparent transparent;
+    content: "";
+    bottom: -30px;
+    right: 59px;
+    
+}
+.c .icon > i {
+    color: #fff;
+    font-size: 54px;
+    margin-bottom: 12px;
+}
+.c h3 {
+    color: #fff;
+    margin-bottom: 11px;
+    letter-spacing: .5px;
+    font-weight: normal;
+}
+.c button {
+    background: transparent;
+    border: 0;
+    margin-top: 18px;
+    color: #eee;
+    font-size: 13px;
+    cursor: pointer;
+}
+.c-content{
+    padding: 57px 24px 30px;
+    text-align: center;
+}
+.c-content img {
+    width: 60px;
+    border-radius: 50%;
+}
+.c-content .image {
+    border-radius: 50%;
+    position: absolute;
+    top: -29px;
+    right: 28px;
+    background: linear-gradient(to bottom , #9c27b0 , rgba(30, 143, 255, 0.513));
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-content >p{
+    font-size: 15px;
+    color: #777;
+} 
+.c-content .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+.c-content .info p{
+    display: flex;
+    align-items: center;
+}
+.c-content i{
+    color: dodgerblue;
+    margin-right: 4px;
+    font-size: 20px;
+}
+.second .icon {
+    background: linear-gradient(to bottom , #ef5350 , #ffb74d)
+}
+.second .icon::after{
+    border-color: #ffb74d transparent transparent transparent;   
+}
+.second .image{
+    background: linear-gradient(to bottom , #ef5350 , #ffb74d)
+}
+.second i {
+    color:#ef5350;
+}
+
+.three .icon {
+    background: linear-gradient(to bottom , #558b2f , #d4e157);
+}
+.three .icon::after{
+    border-color: #d4e157 transparent transparent transparent;   
+}
+.three .image{
+    background: linear-gradient(to bottom , #558b2f , #d4e157);
+}
+.three i {
+    color:#558b2f;
+}

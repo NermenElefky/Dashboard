@@ -1,0 +1,405 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+.setting-text{
+    padding: 10px 25px;
+}
+@media (max-width:767px) {
+    .setting-text{
+        padding: 10px 10px;
+    }
+}
+.setting-head{
+    font-size: 21px;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.setting-p{
+    font-size: 14px;
+    color: #777;
+}
+.setting-sub-p{
+    font-size: 12px;
+    color: #777;
+}
+.setting-sub-head{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.btn{
+    border: 0;
+    width: 88px;
+    height:33px;
+    border-radius: 23px;
+    background: dodgerblue;
+    cursor: pointer;
+}
+.btn i {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: block;
+    width: 38px;
+    height: 29px;
+}
+.setting-textarea{
+    resize: none;
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    margin-top: 15px;
+    height: 130px;
+    margin-left: 15px;
+    border-color: dodgerblue;
+    margin-bottom: 15px;
+    caret-color: dodgerblue;
+}
+textarea,input:focus{
+    outline: 0;
+}
+
+/* site control */
+.site .setting-text:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* start general info */
+.general form{
+    padding: 10px 25px;
+}
+@media (max-width:767px) {
+    .general form {
+        padding: 10px 10px;
+    }
+}
+.general input {
+    margin-top: 10px;
+    width: 100%;
+    height: 29px;
+    padding: 0px 10px;
+    outline: 0;
+    border: 1px solid dodgerblue;
+    caret-color: dodgerblue;
+}
+.general input[type = "text"]{
+
+}
+.general input[type = "email"]{
+    width:80%;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: .2px;
+    cursor: not-allowed;
+    background-color: #f4f4f4;
+}
+
+.general label{
+    display: block;
+    margin-bottom: 10px;
+}
+.general label:last-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.general label:last-of-type span:first-of-type{
+    width:100%;
+}
+.general span:last-child {
+    color: dodgerblue;
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .general span:last-child{
+        font-size: 12px;
+    }
+}
+/* we will need JS heree when clicking on change the (disabled property in email disppear)
+and he can write his emai then save auto */
+
+/* start security */
+.n-btn{
+    padding: 5px 10px;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+.n-btn2{
+    padding: 5px 10px;
+    background-color: rgb(231, 227, 227);
+    color: #000;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+.security .setting-text{
+    padding: 10px 0px;
+    margin-left: 25px;
+    margin-right: 13px;
+}
+@media (max-width:767px) {
+    .security .setting-text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.security  .setting-text:not(:first-of-type){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.security .setting-text:nth-child(2),.security .setting-text:nth-child(3){
+    border-bottom: 1px solid #ccc;
+}
+/* start control */
+.control form {
+    padding: 10px 25px;
+}
+.control label {
+    margin-left: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    cursor:pointer;
+}
+.control label::after{
+    content: "\f00c";
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    background: dodgerblue;
+    left: -33px;
+    top: 50%;
+    margin-top: -8px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color:#fff;
+    display: grid;
+    place-items: center;
+    transform: scale(0) rotate(360deg);
+    transition: .5s;
+}
+.control label::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid #26a69a;
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    margin: -9px;
+}
+.control input[type ="checkbox"]:checked + label::after{
+    transform: scale(1) rotate(0deg);  
+} 
+.control label:hover::before{
+    border-color: dodgerblue;
+}
+.control input[type ="checkbox"]:checked + label::before{
+    border-color: dodgerblue;
+}
+.control input{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+/* start back styles */
+.back form {
+    padding: 10px 25px;
+    overflow: hidden;
+}
+@media (max-width:767px) {
+    .back form{
+        padding: 10px;
+    }
+}
+.back .group1 > div {
+    margin-bottom: 10px;
+}
+.back .group1 input{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.back .group1 label{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: capitalize;
+    cursor:pointer;
+}
+.back .group1 label::after,.back .group1 label::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+
+}
+.back .group1 label::after{
+    background: dodgerblue;
+    width: 10px;
+    height: 10px;
+    left: -66px;
+    top: 50%;
+    margin-top: -4px;
+    transition: .5s;
+}
+.back .group1 input[type ="radio"]:checked + label::after{
+    left: -23px;
+}
+.back .group1 label::before{
+    width: 14px;
+    height: 14px;
+    left: -27px;
+    top: 50%;
+    margin-top: -8px;
+    border: 2px solid dodgerblue;
+}
+/* start group2 styles */
+.back .group2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+@media (max-width:767px) {
+    .back .group2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.back .group2 div{
+    border: 2px solid #eee;
+    border-radius: 5px;
+    width: 30%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    padding: 30px 0px;
+}
+@media (max-width:767px) {
+    .back .group2 div {
+        width:100%;
+        padding: 20px 0px;
+        margin-bottom: 10px;
+    }
+}
+.back .group2 input[type = "radio"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.back .group2 div:has(input[type = "radio"]:checked){
+    border-color: dodgerblue;
+} 
+.back .group2 label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.back .group2 label span {
+    display:block;
+    margin-bottom: 4px;
+}
+.back .group2 input[type = "radio"]:checked + label span {
+    color: dodgerblue;
+}
+.back .group2 input[type = "radio"]:checked + label span i {
+    color: dodgerblue;
+}
+/* start social */
+.social .social-icons{
+    display: flex;
+    padding: 10px 25px 113px;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 20px;
+}
+.social-icons >div {
+
+}
+.social-icons >div .icon {
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 30%);
+}
+@media (max-width:767px) {
+    .social-icons >div .icon {
+        width:30px;
+        height: 30px;
+    }
+}
+.social-icons > div .icon:hover {
+    border:1px solid dodgerblue;
+}
+.social-icons > div:nth-child(3) .icon:hover {
+    border:1px solid rgb(245, 14, 14) ;
+}
+.social-icons >div .icon input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.social-icons >div .icon:has(input[type = "radio"]:checked) ~ input{
+    width: 80%;
+    padding: 3px 10px;
+    border:1px solid dodgerblue;
+}
+.social-icons >div .icon  i{
+    font-size: 21px;
+    color: dodgerblue;
+}
+.social-icons > div:nth-child(3) .icon i {
+    color: rgb(245, 14, 14);
+}
+.social-icons > div > input{
+    position: absolute;
+    display: block;
+    top: 100px;
+    width: 0%;
+    height: 28px;
+    left: 10%;
+    padding: 0px 0px;
+    border-radius: 5px;
+    border: 0px solid dodgerblue;
+    caret-color: dodgerblue;
+    transition: .5s;
+}
+.social-icons > div > input::placeholder{
+    color: dodgerblue;
+    font-size: 13px;
+}

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    grid-template-columns: repeat(auto-fill,minmax(290px , 1fr));
+    grid-gap:20px;
+    place-content: center;
+}
+@media (max-width:767px) {
+    .wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
+    }
+    .container .content {
+        padding: 10px 15px;
+    }
+}
+/* start styling */
+.wrapper .box {
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px 10px;
+}
+.box .price {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(45deg , violet , #e3f2fd);    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    outline: 2px solid #e1bee7;
+    outline-offset: 4px;
+}
+.box .price p {
+    position: relative;
+}
+.box .price p::before{
+    content: "\24";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 13px;
+    left: -8px;
+}
+.box .name {
+    position: relative;
+    font-size: 34px;
+    color: #000;
+    font-family: 'Noto Sans KR';
+    width: 100%;
+    display: grid;
+    place-content: center;
+    margin: 20px 0px;
+}
+.name::before, .name::after{
+    content: "";
+    background: linear-gradient(45deg , violet , #e3f2fd);    color: #fff;
+    height: 2px;
+    position: absolute;
+    width: calc(50% - 84px);
+    top: 55%;
+}
+.name::before{
+    left: 38px;
+}
+.pre .name::before{
+    left: 11px;
+}
+.name::after{
+    right: 38px;
+}
+.pre .name::after{
+    right: 11px;
+}
+.features{
+    width: 100%;
+}
+.features > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #e1bee7;
+    padding: 6px;
+}
+.features > div div{
+    display: inline-block;
+}
+.features >  div >div i{
+    margin-right: 6px;
+    color: violet;
+}
+
+.features div > i{
+    color: #ccc;
+}
+.features > div > div i.not-included{
+    color: dodgerblue;
+}
+.btn {
+    width: 100%;
+}
+button {
+    background: linear-gradient(45deg , violet , #e3f2fd);    color: #fff;
+    color: #000;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border:0px;
+    cursor: pointer;
+}
+.btn p {
+    color: #7777;
+    font-size: 14px;
+    text-align: center;
+}
