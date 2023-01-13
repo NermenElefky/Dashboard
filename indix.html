@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahboard</title>
+    <link rel="stylesheet" href="cssfolder/sidebar.css">
+    <link rel="stylesheet" href="cssfolder/all.min.css">
+    <link rel="stylesheet" href="cssfolder/frame-work.css">
+    <link rel="stylesheet" href="cssfolder/style-indix.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&family=Open+Sans:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parent">
+        <div class="side-bar">
+            <div class="info">
+                <h2>Nermen</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li class = "active"><a href="indix.html"><i class="fa-solid fa-receipt"></i><span>Dashboard</span></a></li>
+                    <li class = "fill"><a href="settings.html"><i class="fa-solid fa-gear"></i><span>settings</span></a></li>
+                    <li class = "fill"><a href="profile.html"><i class="fa-solid fa-user"></i> <span>profile</span></a></li>
+                    <li class = "fill"><a href="projects.html"><i class="fa-solid fa-diagram-project"></i> <span>projects</span></a></li>
+                    <li class = "fill"><a href="courses.html"><i class="fa-solid fa-book"></i> <span>courses</span></a></li>
+                    <li class = "fill"><a href="friends.html"><i class="fa-solid fa-user-group"></i> <span>friends</span></a></li>
+                    <li class = "fill"><a href="plans.html"><i class="fa-solid fa-credit-card"></i> <span>plans</span></a></li>
+                    <li class = "fill"><a href="files.html"><i class="fa-solid fa-sheet-plastic"></i> <span>Files</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+           <div class="top-part">
+            <div class="search">
+                <input type="text" placeholder="type a keyword" class ="global-input">
+            </div>
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+                <img src="imgs/port-image.webp" alt="">
+            </div>
+           </div>
+           <div class="content">
+            <div class="main-heading">
+                <h2><span>D</span>ashboard</h2>
+            </div>
+            <div class="wrapper">
+                <div class="welcome box">
+                    <div class="upper-part">
+                        <div class="text">
+                            <h3>Welcome</h3>
+                            <p>Nermen</p>
+                        </div>
+                        <div class="image">
+                            <img src="imgs/welcome2.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="lower-part">
+                        <div class="info">
+                            <p><span>Nermen makram</span> <span>Developer</span></p>
+                            <p><span>40</span><span>Projects</span></p>
+                            <p><span>$3200</span><span>Earn</span></p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class ="global-button" onclick = "window.location.href = 'profile.html'">profile</button>
+                    </div>
+                </div>
+                <div class="draft box">
+                    <div class="text">
+                        <h2>Quick Draft</h2>
+                        <p>Write A Draft For Your Ideas</p>
+                        <div class="info">
+                            <input type="text" placeholder="Title" class="global-input">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your thought" class ="global-input"></textarea>
+                        </div>
+                        <div class="button">
+                            <button class="global-button">save</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="target box">
+                    <div class="text">
+                        <h2>Yearly Targets</h2>
+                        <p>Targets Of The Year</p>
+                    </div>
+                    <div class="boxs-container">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="info">
+                                <p>Team</p>
+                                <span>10</span>
+                                <span data-after = "45%"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </div>
+                            <div class="info">
+                                <p>Money</p>
+                                <span>$10,000</span>
+                                <span data-after = "75%"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                           <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                           </div>
+                            <div class="info">
+                                <p>Projects</p>
+                                <span>40</span>
+                                <span data-after = "55%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tickets box">
+                    <div class="text">
+                        <h2>Tickets Statistics</h2>
+                        <p>Everything About Support Tickets</p>
+                    </div>
+                    <div class="tickets-container">
+                        <div class="box-like">
+                            <i class="fa-solid fa-rectangle-list" style ="color:#f59e0b"></i>
+                            <h3>2200</h3>
+                            <p>Total</p>
+                        </div>
+                        <div class="box-like">
+                            <i class="fa-solid fa-spinner" style ="color:dodgerblue"></i>
+                            <h3>400</h3>
+                            <p>Pending</p>
+                        </div>
+                        <div class="box-like">
+                            <i class="fa-solid fa-circle-check" style = "color:#22c55e"></i>
+                            <h3>1700</h3>
+                            <p>Closed</p>
+                        </div>
+                        <div class="box-like">
+                            <i class="fa-solid fa-circle-xmark" style = "color:#f44336"></i>
+                            <h3>100</h3>
+                            <p>Deleted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-news box">
+                    <div class="text">
+                        <h2>Latest News</h2>
+                    </div>
+                    <div class="box-container">
+                        <div class="c">
+                            <img src="imgs/css-session.jpg" alt="">
+                             <div class="info">
+                                <h3>Created CSS Section</h3>
+                                <p>New CSS Examples & Tutorials</p>
+                                <span>9 days ago</span>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <img src="imgs/design.jpg" alt="">
+                             <div class="info">
+                                <h3>Changed The Design</h3>
+                                <p>A Brand New Website Design</p>                                </p>
+                                <span>6 days ago</span>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <img src="imgs/teamwork.jpg" alt="">
+                             <div class="info">
+                                <h3>Team Increased</h3>
+                                <p>3 Developers Joined The Team</p>
+                                <span>3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <img src="imgs/payment.jpg" alt="">
+                             <div class="info">
+                                <h3>Added Payment Gateway</h3>
+                                <p>Many New Payment Gateways Added</p>
+                                <span>7 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-tasks box">
+                    <div class="text">
+                        <h2>latest Taks</h2>
+                    </div>
+                    <div class="taks-container">
+                        <div class="box-task fill" style = "--i : dodgerblue;">
+                            <div class="info">
+                                <h2>Record One New Video</h2>
+                                <p>Record Python Create Exe Project</p>
+                            </div>
+                            <i class="fa-solid fa-trash" style="color:dodgerblue;"></i>
+                        </div>
+                        <div class="box-task fill" style = "--i:#f59e0b;" >
+                            <div class="info">
+                                <h2>Write Article</h2>
+                                <p>Write Low Level vs High Level Languages</p>
+                            </div>
+                            <i class="fa-solid fa-trash" style="color:#f59e0b"></i>
+                        </div>
+                        <div class="box-task fill" style = "--i:#22c55e;">
+                            <div class="info">
+                                <h2>Finish Project</h2>
+                                <p>Publish Academy Programming Project</p>
+                            </div>
+                            <i class="fa-solid fa-trash" style = "color:#22c55e"></i>
+                        </div>
+                        <div class="box-task fill" style = "--i:#f44336;">
+                            <div class="info">
+                                <h2>Attend The Meeting</h2>
+                                <p>Attend The Project Business Analysis Meeting</p>
+                            </div>
+                            <i class="fa-solid fa-trash" style="color:#f44336"></i>
+                        </div>
+                        <div class="box-task fill"  style = "--i:dodgerblue;">
+                            <div class="info">
+                                <h2>Finish Lesson</h2>
+                                <p>Finish Teaching Flex Box</p>
+                            </div>
+                            <i class="fa-solid fa-trash" style="color:dodgerblue"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="top box">
+                    <div class="text">
+                        <h2>Top Search Items</h2>
+                        <div class="more">
+                            <p>Keyword</p>
+                            <p>Search count</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><span>Programming</span><span>100</span></li>
+                        <li><span>Javascript</span><span>109</span></li>
+                        <li><span> Code</span><span>200</span></li>
+                        <li><span>Python</span><span>101</span></li>
+                        <li><span> Php</span><span>110</span></li>
+                        <li><span>Sass</span><span>143</span></li>
+                        <li><span>Design</span><span>98</span></li>
+                    </ul>
+                </div>
+                <div class="upload box">
+                    <div class="text">
+                        <h2>Latest Uploads</h2>
+                    </div>
+                    <div class="upload-box">
+                       <div class="info">
+                        <i class="fa-solid fa-file-word" style ="color:dodgerblue"></i>
+                        <div class="more">
+                            <h3>My-Word-File</h3>
+                            <p>Designer</p>
+                        </div>
+                       </div> 
+                       <div class="time" style ="color:dodgerblue">
+                        2 hours 
+                       </div>
+                    </div>
+                    <div class="upload-box">
+                        <div class="info">
+                            <i class="fa-solid fa-file-pdf" style="color:#22c55e"></i>
+                            <div class="more">
+                             <h3>my-file.pdf</h3>
+                             <p>Admin</p>
+                            </div>
+                        </div> 
+                        <div class="time" style="color:#22c55e">
+                         2 hours 
+                        </div>
+                     </div>
+                     <div class="upload-box">
+                        <div class="info">
+                         <i class="fa-solid fa-file-video" style ="color:#f44336"></i>
+                         <div class="more">
+                             <h3>My-video-file</h3>
+                             <p>Admin</p>
+                         </div>
+                        </div> 
+                        <div class="time" style ="color:#f44336">
+                         1 hours 
+                        </div>
+                     </div>
+                     <div class="upload-box">
+                        <div class="info">
+                            <i class="fa-solid fa-file" style="color:#f59e0b"></i>
+                            <div class="more">
+                             <h3>My-Psd-File</h3>
+                             <p>Admin</p>
+                         </div>
+                        </div> 
+                        <div class="time"style="color:#f59e0b">
+                         4 hours 
+                        </div>
+                     </div>
+                     <div class="upload-box">
+                        <div class="info">
+                            <i class="fa-regular fa-file-zipper" style="color:#22c55e"></i>
+                            <div class="more">
+                             <h3>My-Zip-File</h3>
+                             <p>User</p>
+                         </div>
+                        </div> 
+                        <div class="time"  style="color:#22c55e">
+                         3 hours 
+                        </div>
+                     </div>
+                     <div class="upload-box">
+                        <div class="info">
+                            <i class="fa-solid fa-file-lines" style="color:dodgerblue"></i>
+                         <div class="more">
+                             <h3>My-DLL-File</h3>
+                             <p>Nermen</p>
+                         </div>
+                        </div> 
+                        <div class="time"  style="color:dodgerblue">
+                         2 hours 
+                        </div>
+                     </div>
+                </div>
+                <div class="project box">
+                    <div class="text">
+                        <h2>Last Project Progress</h2>
+                    </div>
+                    <div class="steps">
+                        <ul>
+                            <li>Got The Project</li>
+                            <li>Started The Project</li>
+                            <li>The Project About To Finish</li>
+                            <li>Test The Project</li>
+                            <li>Finish The Project & Get Money</li>
+                        </ul>
+                    </div>
+                    <img src="imgs/product.jpg" alt="">
+                </div>
+                <div class="reminder box">
+                    <div class="text">
+                        <h2>Reminders</h2>
+                    </div>
+                    <div class="remind-box">
+                        <span style = "background-color: dodgerblue;"></span>
+                        <p style = "--i:dodgerblue"><span>Check My Tasks List</span><span>28/09/2022 - 12:00am</span></p>
+                    </div>
+                    <div class="remind-box">
+                        <span style ="background-color:#22c55e ;"></span>
+                        <p style ="--i:#22c55e"><span>Check My Projects</span><span>26/10/2022 - 12:00am</span></p>
+                    </div>
+                    <div class="remind-box">
+                        <span style ="background-color: #f44336;"></span>
+                        <p style ="--i:#f44336"><span>Call All My Clients</span><span>05/11/2022 - 12:00am
+                        </span></p>
+                    </div>
+                    <div class="remind-box">
+                        <span style ="background-color: #f59e0b;"></span>
+                        <p style ="--i:#f59e0b"><span>Finish The Development Workshop</span><span>20/12/2022 - 12:00am</span></p>
+                    </div>
+                </div>
+                <div class="post box">
+                    <div class="text">
+                        <h2>Latest Post</h2>
+                    </div>
+                    <div class="publisher">
+                        <img src="imgs/port-image.webp" alt="">
+                        <div class="info">
+                            <h3>Nermen Makram</h3>
+                            <p>2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <q>It is better to be hated for what you are than to be loved for what you are not.
+                        </q>
+                    </div>
+                    <div class="icons">
+                        <span>1.5K</span>
+                        <span>300</span>
+                    </div>
+                </div>
+                <div class="social box">
+                    <div class="text">
+                        <h2>Social Media Stats</h2>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-box">
+                            <i class="fa-brands fa-twitter" style ="background-color:dodgerblue"></i>
+                            <p style="background-color: dodgerblue;"><span>30K Followers</span><span style = "cursor:pointer;">follow</span></p>
+                        </div>
+                        <div class="social-box">
+                            <i class="fa-brands fa-facebook-f" style ="background-color: dodgerblue;"></i>
+                            <p  style ="background-color: dodgerblue;"><span>20K Likes</span><span style = "cursor:pointer;">like</span></p>
+                        </div>
+                        <div class="social-box">
+                            <i class="fa-brands fa-youtube" style="background-color: #f44336;"></i>
+                            <p style="background-color: #f44336;"><span>5.4K Subs</span><span style = "cursor:pointer;">subscribe</span></p>
+                        </div>
+                        <div class="social-box">
+                            <i class="fa-brands fa-linkedin-in" style ="color:#fff;background-color: dodgerblue;"></i>
+                            <p style = "background-color: dodgerblue;"><span>3.5K Followers</span><span style = "cursor:pointer;">follow</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects box">
+                <div class="text">
+                    <h2>Projects</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <span>Name</span>
+                            <span>Finish Date</span>
+                            <span>Client</span>
+                            <span>Price</span>
+                            <span>Team</span>
+                            <span>Status</span>
+                        </li>
+
+                        <li>
+                            <span>Ministry Wikipedia</span>
+                            <span>	10 May 2022</span>
+                            <span>Ministry</span>
+                            <span>$5300</span>
+                            <span>
+                                <div class="iamges">
+                                    <img src="imgs/ava2.jpg" alt="">
+                                    <img src="imgs/ava.jpg" alt="">
+                                    <img src="imgs/Cheerful_happy_cute_girl_waving_raised_hand_to_say_hello_logo_hand_drawn_cartoon_art_illustration.jpg" alt="">
+                                </div>
+                            </span>
+                            <span><span style = "background-color:#22c55e">Completed</span>                            </span>
+                        </li>
+
+                        <li>
+                            <span>Udacity</span>
+                            <span>12 Oct 2021</span>
+                            <span>Company</span>
+                            <span>$7400</span>
+                            <span>
+                               <div class="images">
+                                <img src="imgs/ava2.jpg" alt="">
+                                <img src="imgs/ava.jpg" alt="">
+                               </div>
+                            </span>
+                            <span><span style="background-color: dodgerblue;">in progress</span>                            </span>
+                        </li>
+
+                        <li>
+                            <span>Nora Website</span>
+                            <span>10 sep 2021</span>
+                            <span>Nora</span>
+                            <span>$1200</span>
+                            <span>
+                                <div class="images">
+                                    <img src="imgs/ava2.jpg" alt="">
+                                    <img src="imgs/ava.jpg" alt="">
+                                   </div> 
+                            </span>
+                            <span><span style="background-color: #22c55e;">Completed</span>                            </span>
+                        </li>
+
+                        <li>
+                            <span>Ahmed website</span>
+                            <span>21 may 2021</span>
+                            <span>Ahmed</span>
+                            <span>9000$</span>
+                            <span>
+                                <div class="images">
+                                    <img src="imgs/ava2.jpg" alt="">
+                                    <img src="imgs/ava.jpg" alt="">
+                                    <img src="imgs/Cheerful_happy_cute_girl_waving_raised_hand_to_say_hello_logo_hand_drawn_cartoon_art_illustration.jpg" alt="">
+                                   </div> 
+                            </span>
+                            <span><span style="background-color: #22c55e;">Completed</span></span>
+                        </li>
+
+                        <li>
+                            <span>Arena Application</span>
+                            <span>01 Mar 2021</span>
+                            <span>Arena Company</span>
+                            <span>$5000</span>
+                            <span>
+                                <div class="images">
+                                    <img src="imgs/ava2.jpg" alt="">
+                                    <img src="imgs/avaone.jpg" alt="">
+                                    <img src="imgs/Cheerful_happy_cute_girl_waving_raised_hand_to_say_hello_logo_hand_drawn_cartoon_art_illustration.jpg" alt="">
+                                   </div>  
+                            </span>
+                            <span><span style="background-color: dodgerblue;">in progress</span>                            </span>
+                        </li>
+
+                        <li>
+                            <span>Jana website</span>
+                            <span>23 Oct 2021</span>
+                            <span>Jana</span>
+                            <span>$1200</span>
+                            <span>
+                                <div class="images">
+                                    <img src="imgs/avaone.jpg" alt="">
+                                    <img src="imgs/ava.jpg" alt="">
+                                    <img src="imgs/Cheerful_happy_cute_girl_waving_raised_hand_to_say_hello_logo_hand_drawn_cartoon_art_illustration.jpg" alt="">
+                                   </div>  
+                            </span>
+                            <span><span style ="background-color: #f44336;">Rejected</span>                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
